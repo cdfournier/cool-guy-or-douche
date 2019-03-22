@@ -77,9 +77,9 @@ button.capture--button svg { width: 100%; height: 100%; fill: #ffffff; }
 
 .loading { display: flex; flex-direction: column; align-items: center; justify-content: center; position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; max-width: 100%; min-width: 100%; height: 100vh; max-height: 100vh; min-height: 100vh; overflow: hidden; margin: 0; padding: 0; background-color: var(--color-two); -webkit-transition: all 0.5s ease 0s; -moz-transition: all 0.5s ease 0s; -ms-transition: all 0.5s ease 0s; -o-transition: all 0.5s ease 0s; transition: all 0.5s ease 0s; }
 
-.loading .logo { width: 50%; }
+.loading .logo { width: 50%; max-width: 50%; max-height: 30%; margin: 0 auto; }
 
-.loading .logo svg { fill: var(--color-one); }
+.loading .logo svg { max-width: 100%; max-height: 100%; }
 
 .loading p a { display: flex; flex-direction: column; width: 100%; margin: 0 auto; padding: 2rem 2rem 1rem; font-size: 0.875rem; font-weight: 700; letter-spacing: 3px; text-align: center; text-transform: uppercase; color: var(--color-one); -webkit-transition: all 0.5s ease 0s; -moz-transition: all 0.5s ease 0s; -ms-transition: all 0.5s ease 0s; -o-transition: all 0.5s ease 0s; transition: all 0.5s ease 0s; }
 
