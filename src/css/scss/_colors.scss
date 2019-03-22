@@ -1,0 +1,31 @@
+// COLORS
+$dk-blue: #0d2845;
+$md-blue: #a7cee1;
+$lt-blue: #f1f5f8;
+
+$color-black: #000000;
+$color-gray: #808080;
+$color-gray_dark: #c0c0c0;
+$color-gray_med: #dfdfdf;
+$color-gray_light: #f9f9f9;
+$color-white: #ffffff;
+
+$color-error: #e00000;
+$color-valid: #218003;
+
+
+// SELECTION
+::-moz-selection {
+  color: $color-white;
+  background: var(--color-one);
+}
+
+::selection {
+  color: $color-white;
+  background: var(--color-one);
+}
+
+
+// TEXT LINKS
+a {color: var(--color-one);}
+a:hover, a:focus {color: var(--color-two);}
