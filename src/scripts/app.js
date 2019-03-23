@@ -5,7 +5,7 @@ const video = document.querySelector('.capture video');
 
 const canvas = document.createElement('canvas');
 
-var constraints = { video: { facingMode: "user" }, audio: false };
+var constraints = {video: true};
 
 
 screenshotButton.onclick = video.onclick = function() {
