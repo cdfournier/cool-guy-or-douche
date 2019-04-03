@@ -38,6 +38,7 @@ body, .body {
   margin: 0 auto;
   padding: 0;
   animation: 0.5s ease-out 0s 1 slideDown;
+  background-color: var(--color-one);
 }
 
 @keyframes slideDown {
@@ -76,3 +77,5 @@ img {
   height: auto;
   margin: 0;
 }
+
+canvas {display: none;}
