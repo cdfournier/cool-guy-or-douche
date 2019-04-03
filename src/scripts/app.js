@@ -48,12 +48,12 @@ function readURL(input) {
 $('.pic').on('change', function() {
   $('.evaluation').addClass('loaded');
   $('.loading').addClass('loaded');
-  setTimeout(function() {$('.evaluation img').addClass('loaded animated fadeInLeft')}, 1000),
-  setTimeout(function() {$('.verdict p').addClass('loaded animated fadeInUp fast')}, 2000),
-  setTimeout(function() {$('.verdict svg').addClass('loaded animated fadeInUp faster')}, 4000),
-  setTimeout(function() {$('.share p').addClass('loaded animated fadeInUp faster')}, 5000),
-  setTimeout(function() {$('.share ul').addClass('loaded animated fadeInUp faster')}, 5000),
-  setTimeout(function() {$('.evaluation .button-box').addClass('loaded animated fadeInUp faster')}, 6000),
+  setTimeout(function() {$('.evaluation img').addClass('loaded')}, 1000),
+  setTimeout(function() {$('.verdict p').addClass('loaded')}, 2000),
+  setTimeout(function() {$('.verdict svg').addClass('loaded')}, 4000),
+  setTimeout(function() {$('.share p').addClass('loaded')}, 5000),
+  setTimeout(function() {$('.share ul').addClass('loaded')}, 5000),
+  setTimeout(function() {$('.evaluation .button-box').addClass('loaded')}, 6000),
   readURL(this);
 });
 
@@ -61,11 +61,11 @@ $('.start--over').click(function() {
   $('.evaluation').removeClass('loaded');
   $('.loading').removeClass('loaded');
   setTimeout(function() {
-    $('.evaluation img').removeClass('loaded animated fadeInLeft'),
-    $('.verdict p').removeClass('loaded animated fadeInUp fast'),
-    $('.verdict svg').removeClass('loaded animated fadeInUp faster'),
-    $('.share p').removeClass('loaded animated fadeInUp faster'),
-    $('.share ul').removeClass('loaded animated fadeInUp faster'),
-    $('.evaluation .button-box').removeClass('loaded animated fadeInUp faster')
+    $('.evaluation img').removeClass('loaded'),
+    $('.verdict p').removeClass('loaded'),
+    $('.verdict svg').removeClass('loaded'),
+    $('.share p').removeClass('loaded'),
+    $('.share ul').removeClass('loaded'),
+    $('.evaluation .button-box').removeClass('loaded')
   }, 1500);
 });

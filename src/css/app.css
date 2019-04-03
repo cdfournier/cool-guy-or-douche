@@ -35,8 +35,6 @@ a { font-weight: 700; text-decoration: none; cursor: pointer; -webkit-transition
 
 img { width: 100%; height: auto; margin: 0; }
 
-canvas { display: none; }
-
 button { display: inline-flex; align-items: center; justify-content: center; width: auto; max-width: 100%; min-width: fit-content; max-height: 2.5rem; min-height: 2.5rem; overflow: hidden; margin: 0; padding: 0 3rem; border: 1px solid #ffffff; border-radius: 2rem; font-size: 0.75rem; font-weight: 600; letter-spacing: 1px; line-height: 2.5rem; text-align: center; text-decoration: none; text-transform: uppercase; white-space: nowrap; color: #ffffff; cursor: pointer; background-color: var(--color-one); -webkit-transition: all 0.325s ease 0s; -moz-transition: all 0.325s ease 0s; -ms-transition: all 0.325s ease 0s; -o-transition: all 0.325s ease 0s; transition: all 0.325s ease 0s; }
 
 button:hover, button:focus { border-color: var(--color-one); color: var(--color-one); background-color: var(--color-two); }
@@ -85,7 +83,7 @@ button input[type="file"] { position: absolute; width: auto; max-width: 9.5rem; 
 
 .evaluation canvas, .evaluation img { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 10rem; height: 10rem; overflow: hidden; margin: 0 auto 2rem; padding: 0; border: 0.375rem solid #ffffff; border-radius: 100%; -webkit-transition: all 0.5s ease 0s; -moz-transition: all 0.5s ease 0s; -ms-transition: all 0.5s ease 0s; -o-transition: all 0.5s ease 0s; transition: all 0.5s ease 0s; -webkit-transform: translateX(-100rem); -moz-transform: translateX(-100rem); -ms-transform: translateX(-100rem); -o-transform: translateX(-100rem); transform: translateX(-100rem); }
 
-.evaluation canvas.loaded, .evaluation img loaded { -webkit-transition: all 0.5s ease 0s; -moz-transition: all 0.5s ease 0s; -ms-transition: all 0.5s ease 0s; -o-transition: all 0.5s ease 0s; transition: all 0.5s ease 0s; -webkit-transform: translateX(0); -moz-transform: translateX(0); -ms-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0); }
+.evaluation canvas.loaded, .evaluation img.loaded { -webkit-transition: all 0.5s ease 0s; -moz-transition: all 0.5s ease 0s; -ms-transition: all 0.5s ease 0s; -o-transition: all 0.5s ease 0s; transition: all 0.5s ease 0s; -webkit-transform: translateX(0); -moz-transform: translateX(0); -ms-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0); }
 
 .verdict p { display: flex; flex-direction: column; width: 100%; margin: 0 auto; padding: 2rem 2rem 1rem; font-size: 1rem; font-weight: 500; letter-spacing: 3px; text-align: center; text-transform: uppercase; color: #ffffff; -webkit-transition: all 0.5s ease 0s; -moz-transition: all 0.5s ease 0s; -ms-transition: all 0.5s ease 0s; -o-transition: all 0.5s ease 0s; transition: all 0.5s ease 0s; -webkit-transform: translateX(-100rem); -moz-transform: translateX(-100rem); -ms-transform: translateX(-100rem); -o-transform: translateX(-100rem); transform: translateX(-100rem); }
 
@@ -111,4 +109,4 @@ button input[type="file"] { position: absolute; width: auto; max-width: 9.5rem; 
 
 .share ul li a:hover, .share ul li a:focus { color: #ffffff; }
 
-.share ul ul.loaded { -webkit-transform: translateX(0); -moz-transform: translateX(0); -ms-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0); }
+.share ul.loaded { -webkit-transform: translateX(0); -moz-transform: translateX(0); -ms-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0); }

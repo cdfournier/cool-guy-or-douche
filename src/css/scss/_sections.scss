@@ -147,7 +147,7 @@
   @include transform(translateX(-100rem));
 }
 
-.evaluation canvas.loaded, .evaluation img loaded {
+.evaluation canvas.loaded, .evaluation img.loaded {
   @include transition(all, 0.5s, ease);
   @include transform(translateX(0));
 }
@@ -245,6 +245,6 @@
       color: var(--color-two);
     }
     li a:hover, li a:focus {color: $color-white;}
-  ul.loaded {@include transform(translateX(0));}
   }
+  ul.loaded {@include transform(translateX(0));}
 }
