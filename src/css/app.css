@@ -35,7 +35,7 @@ a { font-weight: 700; text-decoration: none; cursor: pointer; -webkit-transition
 
 img { width: 100%; height: auto; margin: 0; }
 
-button { display: inline-flex; align-items: center; justify-content: center; width: auto; max-width: 100%; min-width: fit-content; max-height: 2.5rem; min-height: 2.5rem; overflow: hidden; margin: 0; padding: 0 3rem; border: 1px solid #ffffff; border-radius: 2rem; font-size: 0.75rem; font-weight: 600; letter-spacing: 1px; line-height: 2.5rem; text-align: center; text-decoration: none; text-transform: uppercase; white-space: nowrap; color: #ffffff; cursor: pointer; background-color: var(--color-one); -webkit-transition: all 0.325s ease 0s; -moz-transition: all 0.325s ease 0s; -ms-transition: all 0.325s ease 0s; -o-transition: all 0.325s ease 0s; transition: all 0.325s ease 0s; }
+button { display: inline-flex; align-items: center; justify-content: center; width: auto; max-width: 100%; min-width: fit-content; min-height: 2.5rem; overflow: hidden; margin: 0; padding: 0.5rem 3rem; border: 1px solid #ffffff; border-radius: 2rem; font-size: 1rem; font-weight: 700; letter-spacing: 1px; line-height: 2.5rem; text-align: center; text-decoration: none; text-transform: uppercase; white-space: nowrap; color: #ffffff; cursor: pointer; background-color: var(--color-one); -webkit-transition: all 0.325s ease 0s; -moz-transition: all 0.325s ease 0s; -ms-transition: all 0.325s ease 0s; -o-transition: all 0.325s ease 0s; transition: all 0.325s ease 0s; }
 
 button:hover, button:focus { border-color: var(--color-one); color: var(--color-one); background-color: var(--color-two); }
 
