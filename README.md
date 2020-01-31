@@ -8,10 +8,8 @@ You use it in traffic if you're thinking about letting a car cut in front of you
 
 ## Current Dependencies
 - [Animate.css](https://daneden.github.io/animate.css/)
-- [jQuery](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js)
-- [Line Awesome icon font](https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css)
+- [jQuery](https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js)
 - [Modernizr](https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js)
-- [Montserrat font](https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700)
-- [Normalize](https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css)
+- [Montserrat font](https://fonts.googleapis.com/css?family=Montserrat:300,700)
 
-Version 1.0
+Version 1.2

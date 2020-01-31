@@ -105,8 +105,24 @@ button {
 }
 
 
+// CLOSE ICONS
+.close--about, .close--disclaimer {
+  display: block;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  svg {
+    width: 100%;
+    height: 100%;
+    fill: $bittersweet;
+  }
+}
+
+
 // LAYOUT
-.start, .about, .evaluation {
+.start, .about, .evaluation, .disclaimer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -139,7 +155,7 @@ button {
     justify-content: center;
     width: 100%;
     margin: 0 auto;
-    padding: 1rem 0;
+    padding: 1rem 0 2rem;
     svg {
       width: 100%;
       path {fill: $bittersweet;}
@@ -155,6 +171,7 @@ button {
       position: absolute;
       width: auto;
       max-width: 70%;
+      height: 100%;
       overflow: hidden;
       margin: 0;
       padding: 0;
@@ -220,19 +237,7 @@ button {
     text-transform: uppercase;
     color: $bittersweet;
   }
-  .close--about {
-    display: block;
-    position: absolute;
-    top: 2rem;
-    left: 2rem;
-    width: 2.5rem;
-    height: 2.5rem;
-    svg {
-      width: 100%;
-      height: 100%;
-      fill: $bittersweet;
-    }
-  }
+  p a.open--disclaimer {@include font-body;}
 }
 
 .about.show {@include transform(translateX(0));}
@@ -301,3 +306,24 @@ button {
 }
 
 .evaluation.show {@include transform(translateX(0));}
+
+
+// DISCLAIMER
+.disclaimer {
+  align-items: flex-start;
+  color: $bittersweet;
+  @include transition(all, 0.5s, ease);
+  @include transform(translateX(-100rem));
+  h1 {
+    margin: 0;
+    padding: 0 2rem;
+    @include font-body;
+  }
+  p {
+    margin: 0;
+    padding: 2rem 2rem 0;
+    line-height: 2;
+  }
+}
+
+.disclaimer.show {@include transform(translateX(0));}

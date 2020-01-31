@@ -8,6 +8,16 @@ $('.close--about').click(function() {
   $('.start').removeClass('hide');
 });
 
+$('.open--disclaimer').click(function() {
+  $('.about').removeClass('show');
+  $('.disclaimer').addClass('show');
+});
+
+$('.close--disclaimer').click(function() {
+  $('.disclaimer').removeClass('show');
+  $('.about').addClass('show');
+});
+
 function storeTheImage() {
     var imgCanvas = document.getElementById('pic-canvas'),
         imgContext = imgCanvas.getContext("2d");
