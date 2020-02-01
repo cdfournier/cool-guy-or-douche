@@ -87,7 +87,7 @@ button {
   overflow: hidden;
   margin: 0;
   padding: 1rem 2rem;
-  border: 1px solid;
+  border: 1px solid $bittersweet;
   border-radius: 2rem;
   @include font-bold;
   font-size: 1rem;
@@ -97,8 +97,15 @@ button {
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
+  color: $old-lace;
+  background-color: $bittersweet;
   cursor: pointer;
   @include transition(all, 0.5s, ease);
+}
+
+button:hover, button:focus {
+  color: $bittersweet;
+  background-color: $old-lace;
 }
 
 
@@ -110,12 +117,18 @@ button {
   left: 2rem;
   width: 2.5rem;
   height: 2.5rem;
+  opacity: 1;
+  cursor: pointer;
+  @include transition(all, 0.5s, ease);
   svg {
     width: 100%;
     height: 100%;
     fill: $bittersweet;
   }
 }
+
+.close--about:hover, .close--disclaimer:hover,
+.close--about:focus, .close--disclaimer:focus {opacity: 0.6;}
 
 
 // LAYOUT
@@ -157,9 +170,6 @@ button {
   button {
     position: relative;
     margin: 2rem 0;
-    border-color: $bittersweet;
-    color: $old-lace;
-    background-color: $bittersweet;
     input[type="file"] {
       position: absolute;
       width: auto;
@@ -186,9 +196,9 @@ button {
     white-space: nowrap;
     color: $bittersweet;
     cursor: pointer;
-    @include transition(all, 0.25s, ease);
+    @include transition(all, 0.5s, ease);
   }
-  p a:hover, p a:focus {color: white;}
+  p a:hover, p a:focus {letter-spacing: 6px;}
 }
 
 .start.hide {@include transform(translateX(-100rem));}
@@ -230,7 +240,12 @@ button {
     text-transform: uppercase;
     color: $bittersweet;
   }
-  p a.open--disclaimer {@include font-body;}
+  p a.open--disclaimer {
+    @include font-body;
+    cursor: pointer;
+    @include transition(all, 0.5s, ease);
+  }
+  p a.open--disclaimer:hover, p a.open--disclaimer:focus {letter-spacing: 6px;}
 }
 
 .about.show {@include transform(translateX(0));}
@@ -284,9 +299,6 @@ button {
   }
   button {
     margin: 1rem 0 0;
-    border-color: $bittersweet;
-    color: $old-lace;
-    background-color: $bittersweet;
   }
   img, p, .verdict p, .verdict svg, button {
     @include transition(all, 0.5s, ease);

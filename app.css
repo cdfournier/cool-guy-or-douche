@@ -41,7 +41,7 @@ button {
   overflow: hidden;
   margin: 0;
   padding: 1rem 2rem;
-  border: 1px solid;
+  border: 1px solid #f45762;
   border-radius: 2rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -52,6 +52,8 @@ button {
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
+  color: #fff7ea;
+  background-color: #f45762;
   cursor: pointer;
   -webkit-transition: all 0.5s ease 0s;
   -moz-transition: all 0.5s ease 0s;
@@ -59,17 +61,32 @@ button {
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s; }
 
+button:hover, button:focus {
+  color: #f45762;
+  background-color: #fff7ea; }
+
 .close--about, .close--disclaimer {
   display: block;
   position: absolute;
   top: 2rem;
   left: 2rem;
   width: 2.5rem;
-  height: 2.5rem; }
+  height: 2.5rem;
+  opacity: 1;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s; }
   .close--about svg, .close--disclaimer svg {
     width: 100%;
     height: 100%;
     fill: #f45762; }
+
+.close--about:hover, .close--disclaimer:hover,
+.close--about:focus, .close--disclaimer:focus {
+  opacity: 0.6; }
 
 .start, .about, .evaluation, .disclaimer {
   display: flex;
@@ -108,10 +125,7 @@ button {
         fill: #f45762; }
   .start button {
     position: relative;
-    margin: 2rem 0;
-    border-color: #f45762;
-    color: #fff7ea;
-    background-color: #f45762; }
+    margin: 2rem 0; }
     .start button input[type="file"] {
       position: absolute;
       width: auto;
@@ -137,13 +151,13 @@ button {
     white-space: nowrap;
     color: #f45762;
     cursor: pointer;
-    -webkit-transition: all 0.25s ease 0s;
-    -moz-transition: all 0.25s ease 0s;
-    -ms-transition: all 0.25s ease 0s;
-    -o-transition: all 0.25s ease 0s;
-    transition: all 0.25s ease 0s; }
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s; }
   .start p a:hover, .start p a:focus {
-    color: white; }
+    letter-spacing: 6px; }
 
 .start.hide {
   -webkit-transform: translateX(-100rem);
@@ -197,7 +211,15 @@ button {
     color: #f45762; }
   .about p a.open--disclaimer {
     font-family: "Montserrat", sans-serif;
-    font-weight: 300; }
+    font-weight: 300;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s; }
+  .about p a.open--disclaimer:hover, .about p a.open--disclaimer:focus {
+    letter-spacing: 6px; }
 
 .about.show {
   -webkit-transform: translateX(0);
@@ -265,10 +287,7 @@ button {
       width: 100%;
       fill: #f45762; }
   .evaluation button {
-    margin: 1rem 0 0;
-    border-color: #f45762;
-    color: #fff7ea;
-    background-color: #f45762; }
+    margin: 1rem 0 0; }
   .evaluation img, .evaluation p, .evaluation .verdict p, .evaluation .verdict svg, .evaluation button {
     -webkit-transition: all 0.5s ease 0s;
     -moz-transition: all 0.5s ease 0s;
