@@ -1,11 +1,4 @@
 // COLORS
-$old-lace: #fff7ea;
-$bittersweet: #f45762;
-
-$sapling: #e1d6a8;
-$valencia: #e34b4a;
-$topaz: #7c7b80;
-
 $white-smoke: #f8f8f8;
 $astral: #3a7390;
 $fuzzy-wuzzy-brown: #c95757;
@@ -262,7 +255,7 @@ button:active:after {
     margin: 0 auto;
     padding: 3rem 2rem 0;
     @include font-bold;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     letter-spacing: 3px;
     line-height: 2;
     text-align: center;
@@ -346,7 +339,6 @@ button:active:after {
 .disclaimer {
   align-items: flex-start;
   @include font-bold;
-  font-size: 70%;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: $fuzzy-wuzzy-brown;
@@ -358,8 +350,9 @@ button:active:after {
   }
   p {
     margin: 0;
-    padding: 2rem 3rem 0;
-    line-height: 2;
+    padding: 1rem 3rem 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
     strong {text-decoration: underline;}
   }
 }
