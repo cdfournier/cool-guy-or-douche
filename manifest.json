@@ -5,8 +5,8 @@
   "background_color": "#f8f8f8",
   "display": "standalone",
   "orientation": "portrait",
-  "Scope": "https://cdfournier.github.io/cool-guy-or-douche/index.html",
-  "start_url": "https://cdfournier.github.io/cool-guy-or-douche/index.html",
+  "Scope": "/index.html",
+  "start_url": "/index.html",
   "icons": [
     {
       "src": "icons/icon-72x72.png",
